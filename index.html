@@ -1,45 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>本链接已失效</title>
+    <title>Xie Li 1314</title>
+    <link rel="icon" href="../static/img/logo.png">
+    <!-- CSS -->
     <link rel="stylesheet" href="../static/css/global.css">
     <style>
-        a {
-            color: hotpink;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translateY(-50%) translateX(-50%);
-
-            box-sizing: border-box;
-            padding: 20px;
-            width: 100vw;
+        .main {
             max-width: 600px;
-            border-radius: 10px;
-            border: 1px solid lightgray;
+            margin: 72px auto;
+            padding: 20px;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .main-qaa section {
+            padding-left: 20px;
+        }
+
+        .main-qaa section h3 {
+            font-weight: bold;
+        }
+
+        .main-photowall ul {
+            padding-left: 0;
+        }
+
+        .main-photowall ul li::marker {
+            display: none;
+        }
+
+        .main-photowall ul li img {
+            width: 100%;
+        }
+
+        .main-photowall ul li div {
+            font-size: 0.875;
+            text-align: center;
+
+            color: gray;
         }
     </style>
 </head>
 
 <body>
-    <main>
-        <h1>
-            This link is no longer valid.
-            Go to <a href="https://www.class607.top/pair/">https://www.class607.top/pair/</a> for you in 3 seconds.
-            <meta http-equiv="refresh" content="3;url=https://www.class607.top/pair/">
-        </h1>
+    <header class="header">
+        <div class="header-title">
+            <img class="header-title-logo" src="../static/img/logo.png">
+            <span class="header-title-text">Xie Li 1314</span>
+        </div>
+    </header>
+    <main class="main">
+        <p style="text-align: center;">Liao Jinbin, Zhang Yuxuan, and anyone who likes Li Baining or Xie Wendun. I want to say to you: "sorry!" </p>
+        <h1 class="main-title">Xie Li <span style="color: red;">1314</span>!</h1>
+        <article>
+            <h2>Blessing</h2>
+            I wish you happiness for 100,000,000,000... years!
+        </article>
+        <article class="main-qaa">
+            <h2>Q&A</h2>
+            <section>
+                <h3>Who are Xie and Li?</h3>
+                <p>
+                    Xie is Xie Wen<strong>dun</strong>.
+                    Li is Li Boning.
+                </p>
+            </section>
+            <section>
+                <h3>Why do I say: "Xie Li 1314"?</h3>
+                <p>Because Xie mentions Li every day. So I want to help him. [doge]</p>
+            </section>
+        </article>
+        <article class="main-photowall">
+            <h2>Photo wall</h2>
+            <ul>
+                <li>
+                    <img style="width: 100%;" src="../static/img/qq-flash-photo.png">
+                    <div>QQ flash photo</div>
+                </li>
+                <li>
+                    <img src="../static/img/bride.png">
+                    <div>Bride</div>
+                </li>
+                <li>
+                    <img src="../static/img/bridegroom.png">
+                    <div>Bridegroom</div>
+                </li>
+                <li>
+                    <img src="../static/img/birth-certificate.png">
+                    <div>Birth certificate</div>
+                </li>
+                <li>
+                    <img src="../static/img/love-is-war.png">
+                    <div>Xie Wendun Sama: Love Is War</div>
+                </li>
+            </ul>
+        </article>
     </main>
+    <footer class="footer">
+        <div class="footer-linklist">
+            <a href="confession.html">Confession form Xie</a>
+            <a href="https://translate.google.cn/?hl=en-US">Google Translate</a>
+            <a href="producers.html">Producers</a>
+        </div>
+        <div class="footer-other">
+            All content on this interface has nothing to do with the site master.
+        </div>
+    </footer>
+    <style>
+        @font-face {
+            font-family: JetBrains Mono;
+            src: local(JetBrains Mono), url(../static/fonts/JetBrainsMono.ttf);
+        }
+    </style>
+    <script>
+        function bigImg(obj) {
+            var imgSrc = obj.getAttribute("src");
+            window.open(imgSrc, "_self");
+        }
+
+        window.onload = function () {
+            var imgs = document.getElementsByTagName("img");
+            for (i = 0; i < imgs.length; i++) {
+                var img = imgs[i];
+                img.setAttribute("onclick", "bigImg(this)");
+                img.style.cursor = "pointer";
+            }
+        }
+    </script>
 </body>
 
 </html>
